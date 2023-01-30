@@ -11,5 +11,8 @@ public interface EmployeeService {
     //method to get employee by id
     Employee getEmployeeById(long id);
 //update employee
-    Employee updateEmployee(Employee employee, long id);
+Employee updateEmployee(Employee employee, long id);
+//DELETE METHOD
+    
+void DeleteEmployee(long id);
 }
