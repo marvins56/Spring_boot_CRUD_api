@@ -1,5 +1,7 @@
 package com.example.crudapi.service.impl;
 
+import java.util.List;
+
 import org.springframework.stereotype.Service;
 
 import com.example.crudapi.model.Employee;
@@ -20,6 +22,12 @@ public class EmployeeServiceimpl implements EmployeeService {
 	public Employee SaveEmployee(Employee employee) {
         // TODO Auto-generated method stub
         return employeeRepository.save(employee);
+    }
+
+    @Override
+    public List<Employee> getAllEmployees() {
+        // TODO Auto-generated method stub
+        return employeeRepository.findAll();
     }
 
 }
