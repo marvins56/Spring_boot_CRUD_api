@@ -8,4 +8,6 @@ public interface EmployeeService {
     Employee SaveEmployee(Employee employee);
     //method to return list of employees
     List<Employee> getAllEmployees();
+    //method to get employee by id
+    Employee getEmployeeById(long id);
 }
